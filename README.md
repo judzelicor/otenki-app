@@ -1,4 +1,4 @@
-<b><a href="https://judzelicor-weather-app.netlify.app/" target="_blank">Live Site</a> at Netlify</b>
+<b><a href="https://react-weather-web-app.netlify.app/" target="_blank">Live Site</a> at Netlify</b>
 
 <img src="./screenshots/screenshot-1.png">
 <img src="./screenshots/screenshot-2.png">
