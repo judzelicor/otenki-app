@@ -1,0 +1,91 @@
+.card {
+	background-image: linear-gradient(
+		104deg,
+		rgba(255, 255, 255, 0.3) 5%,
+		rgba(245, 245, 245, 0.15) 95%
+	);
+	border-radius: 30px;
+	padding: 24px 32px;
+}
+
+.dailyForecastCard {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+.forecast {
+	padding: 32px 0;
+	width: 200px;
+}
+
+.day {
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.weatherIcon {
+	margin: 0 auto;
+	margin-top: -14px;
+	width: 70px;
+}
+
+.temperature {
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+.temperatureC,
+.temperatureF {
+	position: relative;
+}
+
+.temperatureC {
+	display: inline-block;
+	padding-right: 14px;
+}
+
+.temperatureC::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: var(--color-dark-gray);
+	right: 0;
+}
+
+.temperatureF {
+	display: inline-block;
+	padding-left: 14px;
+}
+
+.description {
+	text-align: center;
+	margin-top: -9px;
+	margin-bottom: 18px;
+}
+
+@media only screen and (min-width: 1200px) {
+	.forecast {
+		width: 150px;
+		padding: 0;
+	}
+
+	.weatherIcon {
+		width: 40%;
+	}
+
+	.description {
+		font-size: 16px;
+	}
+
+	.temperature {
+		font-size: 14px;
+		margin: 0;
+	}
+}

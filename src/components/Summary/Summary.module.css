@@ -1,0 +1,103 @@
+.card {
+	background-image: linear-gradient(
+		226deg,
+		rgba(255, 255, 255, 0.3) 0%,
+		rgba(245, 245, 245, 0.15) 100%
+	);
+	border-radius: 30px;
+	padding: 24px 32px;
+	margin-bottom: 24px;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.summaryCard {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 160px;
+}
+
+.cardLocation {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.cardLocation,
+.cardDatexTime {
+	margin-bottom: 4px;
+}
+
+.cardDatexTime,
+.cardWeatherDescription {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.cardWeatherDescription {
+	margin-right: 14px;
+}
+
+.cardAdvisory {
+	display: inline-flex;
+	overflow-x: hidden;
+	width: 100%;
+	height: 19px;
+	position: relative;
+}
+
+.advisory {
+	display: inline-block;
+	white-space: nowrap;
+	position: absolute;
+}
+
+.advisory:first-child {
+	padding-left: 652.312px;
+	animation-name: sideScroll;
+	animation-duration: 25s;
+	animation-delay: -5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	box-sizing: content-box;
+}
+
+@media only screen and (min-width: 1200px) {
+	.summaryCard {
+		width: 100%;
+		margin-right: 16px;
+	}
+
+	.cardLocation {
+		font-size: 32px;
+	}
+
+	.cardDatexTime,
+	.cardWeatherDescription {
+		font-size: 18px;
+	}
+
+	.container {
+		flex-direction: row;
+	}
+
+	.cardAdvisory {
+		width: 82%;
+	}
+}
+
+@keyframes sideScroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}

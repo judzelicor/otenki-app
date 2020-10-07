@@ -1,0 +1,8 @@
+.chartContainer {
+	border-radius: 30px;
+	padding: 24px;
+	width: 100%;
+	display: flex;
+	overflow: scroll;
+	align-items: center;
+}
